@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace Bewerkingen.Wpf
+namespace Prb.Debugging.Wpf
 {
     /// <summary>
     /// Interaction logic for App.xaml
