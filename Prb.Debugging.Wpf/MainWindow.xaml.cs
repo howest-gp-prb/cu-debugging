@@ -25,42 +25,40 @@ namespace Prb.Debugging.Wpf
             InitializeComponent();
         }
 
-        int TelOp(int getal1, int getal2)
+        int Sum(int number1, int number2)
         {
-            int som;
-
-            som = getal1 + getal2;
-
-            return som;
+            int sum;
+            sum = number1 + number2;
+            return sum;
         }
 
-        float Deel(int getal1, int getal2)
+        float Divide(int number1, int number2)
         {
             float quotient;
-            quotient = getal1 / (float)getal2;
+            quotient = number1 / (float)number2;
             return quotient;
         }
 
-        string ToonBewerkingen(int getal1, int getal2)
+        string ShowCalculations(int number1, int number2)
         {
-            string resultaten;
+            string results;
 
-            resultaten = $"{getal1} + {getal2} = {TelOp(getal1, getal2)}\n";
-            resultaten += $"{getal1} / {getal2} = {Deel(getal1, getal2).ToString("0.00")}\n";
-            resultaten += "----------------------";
-            return resultaten;
+            results = $"{number1} + {number2} = {Sum(number1, number2)}\n";
+            results += $"{number1} / {number2} = {Divide(number1, number2).ToString("0.00")}\n";
+            results += "----------------------";
+            return results;
         }
 
-        private void BtnBewerkingen_Click(object sender, RoutedEventArgs e)
+        private void BtnCalculate_Click(object sender, RoutedEventArgs e)
         {
-            int getal1, getal2;
-            string bewerkingen;
+            int number1, number2;
+            string calculations;
 
-            getal1 = int.Parse(txtGetal1.Text);
-            getal2 = int.Parse(txtGetal2.Text);
+            number1 = int.Parse(txtGetal1.Text);
+            number2 = int.Parse(txtGetal2.Text);
 
-            bewerkingen = ToonBewerkingen(getal1, getal2);
-            tbkResult.Text = bewerkingen;
+            calculations = ShowCalculations(number1, number2);
+            tbkResult.Text = calculations;
         }
 
 

@@ -5,14 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Prb.Debugging.Wpf"
         mc:Ignorable="d"
-        Title="Debugging" Height="450" Width="800">
+        Title="Debugging" Height="245" Width="619">
     <Grid>
         <Label Content="Getal 1" HorizontalAlignment="Left" Margin="10,23,0,0" VerticalAlignment="Top" Width="51"/>
         <Label Content="Getal 2" HorizontalAlignment="Left" Margin="10,55,0,0" VerticalAlignment="Top" Width="51"/>
-        <TextBox x:Name="txtGetal1" HorizontalAlignment="Left" Height="23" Margin="107,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="txtGetal2" HorizontalAlignment="Left" Height="23" Margin="107,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="btnBewerkingen" Content="Voer &#xD;&#xA;bewerkingen&#xD;&#xA; uit" HorizontalAlignment="Left" Margin="252,23,0,0" VerticalAlignment="Top" Width="88" Height="59" Click="BtnBewerkingen_Click"/>
+        <TextBox x:Name="txtNumber1" HorizontalAlignment="Left" Height="23" Margin="107,27,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtNumber2" HorizontalAlignment="Left" Height="23" Margin="107,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCalculate" Content="Voer &#xD;&#xA;bewerkingen &#xD;&#xA;uit" HorizontalAlignment="Left" Margin="252,23,0,0" VerticalAlignment="Top" Width="88" Height="59" Click="BtnCalculate_Click"/>
         <TextBlock x:Name="tbkResult" HorizontalAlignment="Left" Margin="359,23,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="173" Width="208" Padding="10"/>
-
     </Grid>
 </Window>
