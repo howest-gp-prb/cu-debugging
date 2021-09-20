@@ -54,8 +54,8 @@ namespace Prb.Debugging.Wpf
             int number1, number2;
             string calculations;
 
-            number1 = int.Parse(txtGetal1.Text);
-            number2 = int.Parse(txtGetal2.Text);
+            number1 = int.Parse(txtNumber1.Text);
+            number2 = int.Parse(txtNumber2.Text);
 
             calculations = ShowCalculations(number1, number2);
             tbkResult.Text = calculations;
